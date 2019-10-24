@@ -14,4 +14,4 @@ eureka:
       defaultZone: http://ekserver2:40002/eureka/
 spring:
   application:
-    name: ekserver1
+    name: ekservertest
