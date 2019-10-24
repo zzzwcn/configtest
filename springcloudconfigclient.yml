@@ -1,2 +1,4 @@
-huanzi.qch.config.server.password: 123456
-huanzi.qch.config.server.username: zhangsan
+server:
+ port: 29102  
+env:
+ list
