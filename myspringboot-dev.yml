@@ -1,0 +1,17 @@
+server:
+  #注册中心端口号
+  port: 40001
+eureka:
+  instance:
+    #服务器主机
+    hostname: ekserver1
+  client:
+    #本应用为注册中心，这里设置为false，代表不向注册中心注册自己
+    register-with-eureka: false
+    #注册中心主要是维护注册实例，无须进行检索服务，这里也设置为false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://ekserver2:40002/eureka/
+spring:
+  application:
+    name: ekserver1
